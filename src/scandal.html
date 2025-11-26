@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collaboration Scandal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<!-- PAGE NAVIGATION ARROWS -->
+<div class="page-arrow left-arrow" data-direction="prev">❮</div>
+<div class="page-arrow right-arrow" data-direction="next">❯</div>
+
+<body>
+
+    <nav>
+    <div class="nav-inner">
+        <div class="nav-left">
+            <span class="nav-title">Lech Wałęsa Exhibition</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="life.html">Life</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="scandal.html">Scandal</a></li>
+            <li><a href="effects.html">Effects</a></li>
+        </ul>
+
+        <button id="darkToggle" class="dark-toggle">Dark Mode</button>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h2 class="section-title">Collaboration Scandal</h2>
+
+    <div class="exhibit">
+        <img src="assets/archives.png" alt="Archives">
+        <div class="exhibit-text">
+            <h2>Accusations and Archives</h2>
+            <p>
+                Beginning in the 1990s, historians and political opponents claimed that 
+                Wałęsa had cooperated with the communist security service (SB) under 
+                the codename “Bolek” in the early 1970s. He has always denied this.
+            </p>
+            <p>
+                Archival files, expert reports, and court rulings all form part of the 
+                contested record around these accusations.
+            </p>
+        </div>
+    </div>
+
+    <h3 class="section-title">Artifacts from the Debate</h3>
+    <p style="text-align:center;">
+        Click on any artifact to view a short museum-style description.
+    </p>
+
+    <div class="artifacts-grid">
+        <div class="artifact-card"
+             data-title="Alleged SB File Entries"
+             data-description="Some archival documents list a collaborator under the codename 'Bolek.' Supporters of the accusation argue that handwriting and context point to Wałęsa, while critics question authenticity and missing context.">
+            <div class="artifact-title">Alleged SB entries – “Bolek”</div>
+            <p>Archival notes attributed to a shipyard worker informant.</p>
+        </div>
+
+        <div class="artifact-card"
+             data-title="Handwriting Analysis"
+             data-description="Expert handwriting analyses have been used to argue both for and against the authenticity of signatures linked to Wałęsa, demonstrating how technical expertise can become part of political struggle.">
+            <div class="artifact-title">Handwriting reports</div>
+            <p>Expert opinions on signatures in the files.</p>
+        </div>
+
+        <div class="artifact-card"
+             data-title="Wałęsa’s Public Responses"
+             data-description="Wałęsa consistently rejects the accusations, framing them as political attacks meant to weaken his legacy and the meaning of the Solidarity movement.">
+            <div class="artifact-title">Public denials</div>
+            <p>Statements rejecting collaboration and questioning motives.</p>
+        </div>
+    </div>
+
+    <h3 class="section-title" style="margin-top:35px;">Documents as Exhibits</h3>
+    <p style="text-align:center;">Click to zoom in as if you were leaning in over a glass case.</p>
+    <div class="gallery">
+        <img src="assets/document-1.png" alt="Document 1">
+        <img src="assets/document-2.png" alt="Document 2">
+    </div>
+</div>
+
+<!-- Modal for artifacts -->
+<div class="modal-backdrop">
+    <div class="modal">
+        <div class="modal-close">
+            <button aria-label="Close">&times;</button>
+        </div>
+        <h3 class="modal-title">Artifact title</h3>
+        <p class="modal-body">Artifact description</p>
+    </div>
+</div>
+
+<!-- Image zoom overlay -->
+<div class="zoom-overlay">
+    <img src="" alt="Zoomed Exhibit">
+</div>
+
+<footer>
+    © 2025 | Lech Wałęsa Digital Exhibition
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

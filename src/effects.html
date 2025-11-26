@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Effects & Legacy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<!-- PAGE NAVIGATION ARROWS -->
+<div class="page-arrow left-arrow" data-direction="prev">❮</div>
+<div class="page-arrow right-arrow" data-direction="next">❯</div>
+
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <div class="nav-left">
+            <span class="nav-title">Lech Wałęsa Exhibition</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="life.html">Life</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="scandal.html">Scandal</a></li>
+            <li><a href="effects.html">Effects</a></li>
+        </ul>
+
+        <button id="darkToggle" class="dark-toggle">Dark Mode</button>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class="section-title">Effects & Legacy</h2>
+
+    <div class="exhibit">
+        <img src="assets/fall-of-communism.png" alt="Fall of communism">
+        <div class="exhibit-text">
+            <h2>Beyond Poland</h2>
+            <p>
+                Wałęsa’s actions helped accelerate the fall of communist regimes in Central 
+                and Eastern Europe. At the same time, the collaboration scandal continues 
+                to shape debates about trust, memory, and the meaning of heroism.
+            </p>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h3 class="section-title">A Map of Influence</h3>
+        <p style="text-align:center;">
+            Hover over the hotspots to see locations closely tied to his story.
+        </p>
+        <div class="map-container">
+            <!-- Use any map image of Poland/Europe -->
+            <img src="assets/poland-map.png" alt="Map of Poland and Europe">
+            <!-- Approximate positions; tweak using top/left percentages -->
+            <div class="hotspot" style="top:60%; left:55%;" data-label="Gdańsk – Shipyard strikes"></div>
+            <div class="hotspot" style="top:62%; left:51%;" data-label="Warsaw – Round Table talks"></div>
+            <div class="hotspot" style="top:50%; left:40%;" data-label="Berlin – Symbolic ripple of 1989"></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 | Lech Wałęsa Digital Exhibition
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
