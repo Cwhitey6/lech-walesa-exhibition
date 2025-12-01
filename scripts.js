@@ -110,8 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "life.html",
         "career.html",
         "scandal.html",
-        "effects.html"
+        "effects.html",
+        "citations.html"
     ];
+
 
     function getCurrentPageIndex() {
         const current = window.location.pathname.split("/").pop();

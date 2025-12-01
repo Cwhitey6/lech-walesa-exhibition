@@ -509,6 +509,45 @@ body.dark-mode .modal h3 {
     text-shadow: 0 0 10px rgba(106,184,255,0.75);
 }
 
+/* -------------------- CITATION PAGE: FANCY PICTURE FRAMES -------------------- */
+
+.citations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.citation-frame {
+    padding: 18px;
+    background: #fffaf2;
+    border: 6px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 
+        0 0 0 4px #f4e7c2 inset,
+        0 4px 12px rgba(0,0,0,0.2);
+    font-size: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.citation-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 0 0 4px #f4e7c2 inset,
+        0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* dark mode: golden frame + navy background */
+body.dark-mode .citation-frame {
+    background: #1d2940;
+    border-color: #ffd67b;
+    box-shadow: 
+        0 0 0 4px #3b4661 inset,
+        0 4px 12px rgba(0,0,0,0.6);
+    color: #eaf1ff;
+}
+
+
 /* -------------------- RESPONSIVE -------------------- */
 
 @media (max-width: 768px) {
