@@ -574,3 +574,20 @@ body.dark-mode .citation-frame {
         display: none;
     }
 }
+
+.recipients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Prevent oversized images */
+.recipients-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+
