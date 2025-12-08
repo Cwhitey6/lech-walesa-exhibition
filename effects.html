@@ -54,20 +54,53 @@
         </div>
     </div>
 
-    <div class="map-section">
-        <h3 class="section-title">A Map of Influence</h3>
-        <p style="text-align:center;">
-            Hover over the hotspots to see locations closely tied to his story.
-        </p>
-        <div class="map-container">
-            <!-- Use any map image of Poland/Europe -->
-            <img src="assets/poland-map.png" alt="Map of Poland and Europe">
-            <!-- Approximate positions; tweak using top/left percentages -->
-            <div class="hotspot" style="top:60%; left:55%;" data-label="Gdańsk – Shipyard strikes"></div>
-            <div class="hotspot" style="top:62%; left:51%;" data-label="Warsaw – Round Table talks"></div>
-            <div class="hotspot" style="top:50%; left:40%;" data-label="Berlin – Symbolic ripple of 1989"></div>
-        </div>
+    <h3 class="section-title">Artifacts from the Debate</h3>
+    <p style="text-align:center;">
+        Click on any artifact to view a short museum-style description.
+    </p>
+
+    <div class="artifacts-grid">
+
+    <!-- Artifact 1: Lech Wałęsa Institute Foundation -->
+    <div class="artifact-card"
+         data-title="Lech Wałęsa Institute Foundation"
+         data-description="Founded in 1990, the Lech Wałęsa Institute Foundation promotes democracy, civic education, and research into the Solidarity movement. It works internationally to support democratic reform and civic participation.">
+        <div class="artifact-title">Lech Wałęsa Institute Foundation</div>
+        <p>A democratic and civic education foundation established by Wałęsa.</p>
     </div>
+
+    <!-- Artifact 2: Lech Wałęsa Award -->
+    <div class="artifact-card"
+         data-title="Lech Wałęsa Award"
+         data-description="A prestigious international award recognizing individuals or organizations who advance democracy, human rights, and social freedom. Honorees include global reformers, activists, and humanitarian leaders.">
+        <div class="artifact-title">Lech Wałęsa Award</div>
+        <p>A prize honoring contributions to democracy and human rights.</p>
+    </div>
+
+    <!-- Artifact 3: Lech Wałęsa Media Award -->
+    <div class="artifact-card"
+         data-title="Lech Wałęsa Media Award"
+         data-description="This media-focused award highlights journalists who defend free expression, democratic values, and ethical reporting. It emphasizes the importance of truthful journalism in preserving civic freedom.">
+        <div class="artifact-title">Lech Wałęsa Media Award</div>
+        <p>An award recognizing journalism that upholds democratic values.</p>
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- Modal for artifacts -->
+<div class="modal-backdrop">
+    <div class="modal">
+        <div class="modal-close">
+            <button aria-label="Close">&times;</button>
+        </div>
+        <h3 class="modal-title">Artifact title</h3>
+        <p class="modal-body">Artifact description</p>
+    </div>
+</div>
+
 </div>
 
 <footer>

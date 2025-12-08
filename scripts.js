@@ -134,3 +134,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// ---------------- ARTIFACT MODALS ----------------
+
+document.querySelectorAll(".artifact-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const modalId = card.dataset.modal;
+        document.getElementById(modalId).style.display = "flex";
+    });
+});
+
+// Close buttons
+document.querySelectorAll(".modal .close").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.parentElement.parentElement.style.display = "none";
+    });
+});
+
+
