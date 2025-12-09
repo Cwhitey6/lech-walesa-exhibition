@@ -591,3 +591,7 @@ body.dark-mode .citation-frame {
     object-fit: cover;
 }
 
+.recipients-grid .artifact-card {
+    pointer-events: none;
+}
+
